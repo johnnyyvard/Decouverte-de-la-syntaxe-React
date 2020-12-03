@@ -6,9 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>La syntaxe React</title>
-    <script src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react@16.7.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <style>
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #title{
+            background-color: darkgreen;
+        }
+        .heading{
+            color: #ffffff;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,8 +28,8 @@
     <script type="text/babel">
 
         const Bonjour = () => (
-            <div>
-                <h1>Bonjour de React</h1>
+            <div id="title">
+                <h1 className="heading">Bonjour de React</h1>
             </div>
         )
 
